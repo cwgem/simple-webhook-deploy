@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "simple-webhook-deploy"
+version = "0.1.0"
+description = ""
+authors = ["Chris White <me@cwprogram.com>"]
+readme = "README.md"
+packages = [{include = "simple_webhook_deploy", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+kubernetes = "^27.2.0"
+cryptography = "^41.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
